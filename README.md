@@ -1,47 +1,63 @@
-# Alpha97 - Personal Portfolio
+# GSP - Personal Portfolio
 
-Welcome to my personal portfolio repository. This portfolio showcases my work, skills, and experience as a developer. You can explore the live website [here](https://alpha97-personel-portfolio.vercel.app/).
+Welcome to my personal portfolio repository. This project showcases my work, skills, and experience as a developer.  
+<!-- 👉 **Live Demo:** [alpha97-personel-portfolio.vercel.app](https://alpha97-personel-portfolio.vercel.app/) -->
 
-![Portfolio Screenshot](./public/portfolio.png)
+---
 
 ## Overview
 
-Alpha97 - Personal Portfolio is a Next.js web application developed to provide an interactive and informative platform to present my skills, projects, and experience. It features both light and dark themes, allowing visitors to customize their viewing experience. The portfolio also incorporates custom data, demonstrating my proficiency as a Software Engineer.
+**GSP - Personal Portfolio** is a web application built with **Next.js** to provide an engaging and organized platform for presenting my professional journey.  
+It highlights my technical expertise, projects, and achievements, with built-in **light and dark themes** for a personalized viewing experience.  
+The site’s content is fully dynamic and tailored to reflect my background as a **Software Engineer**.
 
-## Live Website
-
-Explore the live website: [Alpha97 - Personal Portfolio](https://alpha97-personel-portfolio.vercel.app/)
+---
 
 ## Features
 
-- **Custom Data**: All the content on this portfolio is personalized and tailored to highlight my skills, projects, and achievements.
+- **Custom Content** – Every section, from skills to experience, is fully personalized to reflect my profile and development journey.  
+- **Light & Dark Themes** – Visitors can switch between light and dark modes, either manually or automatically based on their system preference.  
+- **Contact Form** – Easily get in touch with me directly through the website. All messages are delivered via an integrated contact form.  
 
-- **Light and Dark Mode**: Choose your preferred viewing mode with our user-friendly theme switcher. The portfolio supports both automatic mode (based on your system preferences) and manual mode.
+---
 
-- **Contact Form**: You can easily get in touch with me using the contact form. Send me a message, and I'll get back to you as soon as possible.
+## Theme Support
 
-## Light and Dark Mode
+The portfolio offers seamless switching between **light and dark themes**.  
+By default, it adapts to your system settings, but users can manually toggle modes through the theme switcher.
 
-Alpha97 - Personal Portfolio supports both light and dark modes, giving visitors the flexibility to choose their preferred viewing experience. The theme is controlled by the user's system preference by default, but users can also manually toggle between modes using the provided theme switcher.
+### How It Works
 
-### Switching Themes
+The theme system is implemented using React’s **useContext** API, allowing efficient state management and persistence of user preferences.
 
-- **Manual Mode**: If you prefer one mode over the other, you can manually toggle between light and dark themes using the theme switcher available on the website.
+---
 
 ## Implementation Details
 
-The light and dark mode implementation is achieved using useContext. The user's choice of theme is stored in useContext API.
+- Built with **Next.js** for high performance and SEO-friendly rendering.  
+- **useContext API** manages theme selection and state.  
+- Designed for full **responsiveness** across devices and screen sizes.  
+- Each component is structured for easy customization and scalability.
 
-## Usage
+---
 
-To provide a consistent dark mode experience, ensure that your projects also support dark mode styling for any embedded content on your portfolio.
+## Usage Notes
+
+To maintain a consistent dark mode experience, ensure any embedded components or project previews also support dark mode styling.
+
+---
 
 ## Contributing
 
-Contributions to enhance and optimize the light and dark mode features are welcome! If you have ideas for improvement or wish to contribute, please open a pull request or create an issue.
+Suggestions and improvements are always welcome!  
+If you have ideas to optimize performance or enhance the design, feel free to **open a pull request** or **create an issue**.
+
+---
 
 ## Contact
 
-Feel free to reach out with any questions or opportunities. You can use the contact form on my portfolio website or send me a direct message on [LinkedIn](https://www.linkedin.com/in/alpha97/).
+Interested in connecting or collaborating?  
+Reach out using the contact form on my website, or connect directly via LinkedIn:  
+🔗 [linkedin.com/in/sai-prabhat](https://www.linkedin.com/in/sai-prabhat/)
 
-Thank you for visiting my portfolio and for considering me for potential opportunities.
+Thank you for visiting my portfolio and taking the time to explore my work.
