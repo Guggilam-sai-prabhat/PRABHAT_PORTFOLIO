@@ -58,6 +58,6 @@ If you have ideas to optimize performance or enhance the design, feel free to **
 
 Interested in connecting or collaborating?  
 Reach out using the contact form on my website, or connect directly via LinkedIn:  
-🔗 [linkedin.com/in/sai-prabhat](https://www.linkedin.com/in/sai-prabhat/)
+🔗 [linkedin](https://www.linkedin.com/in/sai-prabhat/)
 
 Thank you for visiting my portfolio and taking the time to explore my work.
