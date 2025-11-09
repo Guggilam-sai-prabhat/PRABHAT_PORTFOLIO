@@ -9,11 +9,7 @@ import Contact from "@/components/Contact/Contact";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-type NavItem = {
-  id: number;
-  title: string;
-  url: string;
-};
+
 
 export default function Home() {
   return (
