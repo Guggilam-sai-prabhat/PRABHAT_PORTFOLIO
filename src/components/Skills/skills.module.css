@@ -1,0 +1,185 @@
+.container {
+  min-height: 80vh;
+  padding: 5rem 8rem;
+  background-color: var(--bg);
+  color: var(--text-color);
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin: 2rem 0;
+  font-size: 3rem;
+}
+
+.skills {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Wrapper for perspective */
+.skillWrapper {
+  perspective: 1000px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Card container */
+.skillCard {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 150px;
+  min-height: 80px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip state */
+.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Front and back faces */
+.skillFront,
+.skillBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 3rem;
+  box-shadow: 8px 8px 0 -1px var(--softTextColor);
+  border: 1px solid var(--softTextColor);
+}
+
+/* Front face */
+.skillFront {
+  background-color: var(--softBg);
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skillWrapper:hover .skillFront {
+  transform: translateY(-3px);
+  box-shadow: 10px 10px 0 -1px var(--softTextColor);
+}
+
+/* Back face */
+.skillBack {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  transform: rotateY(180deg);
+  border-color: #667eea;
+  box-shadow: 8px 8px 0 -1px #667eea;
+  padding: 1.2rem 2rem;
+}
+
+/* Back content */
+.backContent {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.proficiencyLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+  text-align: center;
+}
+
+.proficiencyBar {
+  width: 100%;
+  height: 6px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 0.3rem 0;
+}
+
+.proficiencyFill {
+  height: 100%;
+  background: linear-gradient(90deg, #fff 0%, #f0f0f0 100%);
+  border-radius: 3px;
+  transition: width 0.6s ease;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.experience {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  .skillFront,
+  .skillBack {
+    padding: 1rem 2rem;
+  }
+
+  .container {
+    padding: 5rem 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 5rem 4rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .skillFront {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 5rem 2rem;
+  }
+
+  .skillFront,
+  .skillBack {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .skillCard {
+    min-width: 120px;
+    min-height: 70px;
+  }
+
+  .experience {
+    font-size: 0.8rem;
+  }
+
+  .proficiencyLabel {
+    font-size: 0.7rem;
+  }
+}
